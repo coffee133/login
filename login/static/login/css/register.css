@@ -12,6 +12,16 @@ body {
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Do not repeat the background */
 }
+.form-register input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-register input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 
 .form-register {
   width: 100%;

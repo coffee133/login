@@ -125,3 +125,15 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 DJANGO_SETTINGS_MODULE = 'login_system3.settings'
+
+# settings.py
+# 邮件配置
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.qq.com'  # QQ邮箱的SMTP服务器地址
+EMAIL_PORT = 587  # QQ邮箱的SMTP服务器端口号，通常是465或587
+EMAIL_HOST_USER = ''  # 你的QQ邮箱
+EMAIL_HOST_PASSWORD = ''  # 你的QQ邮箱密码（并非QQ邮箱登录密码，需要在QQ邮箱设置中生成并获取）
+EMAIL_USE_TLS = True  # 使用TLS安全连接
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER  # 默认发件人邮箱
+# 注册有效期天数
+CONFIRM_DAYS = 7
